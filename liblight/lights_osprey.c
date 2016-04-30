@@ -155,8 +155,8 @@ static int open_lights(const struct hw_module_t* module, char const* name,
 
     if (0 == strcmp(LIGHT_ID_BACKLIGHT, name))
         set_light = set_light_backlight;
-    else if (0 == strcmp(LIGHT_ID_BATTERY, name))
-        set_light = set_light_battery;
+    /*else if (0 == strcmp(LIGHT_ID_BATTERY, name))
+        set_light = set_light_battery;*/
     else
         return -EINVAL;
 
